@@ -25,6 +25,7 @@ CXXFLAGS = -std=c++11 -Wall -fpic -O3 -march=native
 
 ifeq ($(USE_EIGEN), 1)
   CXXFLAGS += -DUSE_EIGEN
+  CXXFLAGS += -I /usr/local/include/eigen3/
 else ifeq ($(USE_BLAZE), 1)
   CXXFLAGS += -DUSE_BLAZE 
 else
